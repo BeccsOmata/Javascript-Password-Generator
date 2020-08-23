@@ -1,5 +1,19 @@
 // Assignment code here
 
+// Prompt to select password criteria
+
+    //validate and choose a character
+
+// Prompt for length of password (between 8 and 128 characters)
+
+    //validate and choose a character
+
+// Prompt for character types to include
+
+    //validate and choose a character
+
+// Generate password in alert or on page
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
