@@ -10,3 +10,8 @@ https://beccsomata.github.io/Javascript-Password-Generator/
 
 Snapshot here - 
 https://github.com/BeccsOmata/Javascript-Password-Generator/blob/master/assets/images/password-generator.jpg
+
+Tools - 
+Javascript
+HTML
+CSS
