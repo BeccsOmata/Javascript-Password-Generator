@@ -27,3 +27,30 @@ let character = String.fromCharCode(sourceArray[randomNum]);
 }
     password.innerHTML = passwordString;
 });
+//Generate password in alert or on page
+let pwGenerateFlex = (upper, lower, number, special) => {
+    if(upper) {
+        sourceArray = sourceArray.concat(genArray(65, 90));
+}
+    if(lower) {
+    sourceArray = sourceArray.concat(genArray(97, 122));
+}
+    if(number) {
+        sourceArray = sourceArray.concat(genArray(48, 57));
+}
+    if(special) {
+        sourceArray = sourceArray.concat(genArray(32, 47));
+        sourceArray = sourceArray.concat(genArray(58, 64));
+        sourceArray = sourceArray.concat(genArray(91, 96));
+        sourceArray = sourceArray.concat(genArray(123, 126));
+}
+    return sourceArray;
+}
+
+let genArray = (start, end) => {
+    let arr = [];
+    for(let i = start; i <= end; ++i) {
+    arr.push(i);
+}
+    return arr;
+}
