@@ -1,31 +1,15 @@
-// Assignment code here
+let password = document.getElementById('password');
+let generatePassword = document.getElementById('generate');
+let copyToClipboard = document.getElementById('copy');
+let sourceArray = [];
 
-// Prompt to select password criteria
-
-    //validate and choose a character
-
-// Prompt for length of password (between 8 and 128 characters)
-
-    //validate and choose a character
-
-// Prompt for character types to include
-
-    //validate and choose a character
-
-// Generate password in alert or on page
-
-
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//Click generate password button
+generatePassword.addEventListener('click', () => {
+    event.preventDefault();
+    sourceArray = [];
+    //Prompt for length of password (between 8 and 128 characters)
+    let pwLength = prompt('Choose a number between 8-128 for password length');
+    while(pwLength > 128 || pwLength < 8 || isNaN(pwLength)) {
+        pwLength = prompt('Choice must only be a numeric value between 8 & 128');
+    }
+    if (!pwLength) return;
